@@ -1,3 +1,9 @@
+---
+layout: page
+title: Hello World!
+tagline: Supporting tagline
+---
+
 A First Level Header
 ====================
 
