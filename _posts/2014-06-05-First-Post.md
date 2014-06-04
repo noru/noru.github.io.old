@@ -2,6 +2,8 @@
 layout: page
 title: My First Post
 tagline: I'm going to change theme next
+tags: First Tag
+categories: [cat1, cat2]
 ---
 
 A First Level Header
