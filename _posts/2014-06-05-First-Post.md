@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: My First Post
 tagline: I'm going to change theme next
 tags: First Tag
