@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: My First Post
+tagline: I'm going to change theme next
 ---
 
 A First Level Header
