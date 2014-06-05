@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 小绒绒 <3 小咻咻
-tagline: Supporting tagline
+title: test
+tagline:tagline
 ---
 
 A First Level Header
@@ -27,6 +27,23 @@ dog's back.
 
 <ul class="posts">
   {% for post in site.posts %}
+    {% include post.url %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+{% include themes/hooligan/page.html %}
+{% include _posts/*.md %}
+
+
+
+
+
+
+
+
+
+
+
+
+
