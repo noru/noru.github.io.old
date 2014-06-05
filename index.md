@@ -1,7 +1,7 @@
 ---
 layout: page
-title: test
-tagline:tagline
+title: test and a 
+tagline: tagline
 ---
 
 A First Level Header
