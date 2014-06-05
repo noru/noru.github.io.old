@@ -32,7 +32,7 @@ dog's back.
   {% endfor %}
 </ul>
 
-{% include themes/hooligan/page.html %}
+{% posts 2014-06-05-First-Post.md %}
 
 
 
