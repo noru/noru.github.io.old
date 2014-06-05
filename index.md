@@ -31,7 +31,7 @@ dog's back.
   {% endfor %}
 </ul>
 
-
+{% include themes/hooligan/page.html %}
 
 
 
