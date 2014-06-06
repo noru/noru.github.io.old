@@ -11,12 +11,15 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Dr.X here
+title : Dr.X's Blog
 tagline: What is tagline
 author :
   name : Drew Xiu
   email : nooooru@gmail.com
   github : noru
+  facebook : Drew.Xiu
+  twitter : drew_xiu
+  linkedin : /pub/drew-xiu/69/77/832/
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
