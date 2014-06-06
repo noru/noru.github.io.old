@@ -11,22 +11,18 @@ When I just joint SAP and became a ABAPer, I longed for a Logging/Issue Tracking
 
 Using TCode **SAAB**, one can create a new checkpoint group(with namespace maybe), activate 3 kinds of check point:
 
-> Breakpoints
->
-> Logpoints
->
-> Assertions.
+> Breakpoints    
+> Logpoints    
+> Assertions.  
 
 and manage(check/delete) log records.
 
 On ABAP side, insert the checkpoint like this:
 
-`BREAK-POINT ID Z_DREW_CPG.`
-
-`LOG-POINT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f1' 'f2'.`
-
-`ASSERT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f3' CONDITION 1 = 2.`
+`BREAK-POINT ID Z_DREW_CPG.`  
+`LOG-POINT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f1' 'f2'.`  
+`ASSERT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f3' CONDITION 1 = 2.`  
 
 After activation, these checkpoints will take effect and help you lock down the trouble maker easily.
 
-
+PS： the Log problem mentioned in that artical is no longer an issue for newest __SAAB__ got the activation period feature, that is, automatically turn off after that. And there is another TCode to manage log __SRTM__.
