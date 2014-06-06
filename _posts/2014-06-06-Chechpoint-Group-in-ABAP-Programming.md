@@ -25,5 +25,6 @@ On ABAP side, insert the checkpoint like this:
 `ASSERT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f3' CONDITION 1 = 2.`  
 
 After activation, these checkpoints will take effect and help you lock down the trouble maker easily.  
+
 ---
 PS： the Log problem mentioned in that artical is no longer an issue for newest __SAAB__ got the activation period feature, that is, automatically turn off after that. And there is another TCode to manage log __SRTM__.
