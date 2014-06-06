@@ -26,4 +26,6 @@ On ABAP side, insert the checkpoint like this:
 
 After activation, these checkpoints will take effect and help you lock down the trouble maker easily.
 
+---
+
 PS： the Log problem mentioned in that artical is no longer an issue for newest __SAAB__ got the activation period feature, that is, automatically turn off after that. And there is another TCode to manage log __SRTM__.
