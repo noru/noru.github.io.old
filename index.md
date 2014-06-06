@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hi Asshole!
-tagline: have a nice day
+tagline: I Wish You Hurt Yourself While You Sleep
 ---
 
 <ul class="entries">
