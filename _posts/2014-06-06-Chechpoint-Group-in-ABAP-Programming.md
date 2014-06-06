@@ -14,15 +14,8 @@ Using TCode **SAAB**, one can create a new checkpoint group(with namespace maybe
 
 and check log records.
 
-On ABAP side, insert the checkpoint:
-'BREAK-POINT ID Z_DREW_CPG.'
-'LOG-POINT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f1' 'f2'.'
-'ASSERT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f3' CONDITION 1 = 2.'
+On ABAP side, insert the checkpoint like this:
+`BREAK-POINT ID Z_DREW_CPG.`
+`LOG-POINT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f1' 'f2'.`
+`ASSERT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f3' CONDITION 1 = 2.`
 
-### Header 3
-
-> This is a blockquote.
-> 
-> This is the second paragraph in the blockquote.
->
-> ## This is an H2 in a blockquote
