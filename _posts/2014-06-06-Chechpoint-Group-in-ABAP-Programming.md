@@ -17,7 +17,7 @@ Using TCode **SAAB**, one can create a new checkpoint group(with namespace maybe
 >
 > Assertions.
 
-and check log records.
+and manage(check/delete) log records.
 
 On ABAP side, insert the checkpoint like this:
 
@@ -26,5 +26,7 @@ On ABAP side, insert the checkpoint like this:
 `LOG-POINT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f1' 'f2'.`
 
 `ASSERT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f3' CONDITION 1 = 2.`
+
+After activation, these checkpoints will take effect and help you lock down the trouble maker easily.
 
 
