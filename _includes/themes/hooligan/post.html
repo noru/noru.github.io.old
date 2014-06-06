@@ -40,7 +40,15 @@
           {{ page.category }}
         </span>
       </section>
-    {% endif %}     
+    {% endif %}
+    {% if page.categories %}
+      <section>
+        <h4>Category</h4>
+        <span class="category">
+          {{ page.categories }}
+        </span>
+      </section>
+    {% endif %}   
     {% unless page.tags == empty %}
       <section>
         <h4>Tags</h4>
