@@ -15,7 +15,8 @@ Using TCode **SAAB**, one can create a new checkpoint group(with namespace maybe
 > Logpoints    
 > Assertions.  
 
-and manage(check/delete) log records.
+and manage(check/delete) log records.  
+![screenshot]({{ site.url }}/assets/image/SAAB.jpg)
 
 On ABAP side, insert the checkpoint like this:
 
