@@ -16,8 +16,8 @@ tagline: have a nice day
             {% endfor %}
 </ul>
 
-
-<h1>All Posts</h1>
+<br></br>
+<h2>All Posts</h2>
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
