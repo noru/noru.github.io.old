@@ -16,7 +16,7 @@ tagline: I Wish You Hurt Yourself While You Sleep
             {% endfor %}
 </ul>
 
-<br></br>
+<br>
 <h2>All Posts</h2>
 <ul class="posts">
   {% for post in site.posts %}
