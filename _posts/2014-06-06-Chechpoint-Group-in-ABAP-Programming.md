@@ -3,7 +3,7 @@ layout: post
 title: Checkpoint Group in ABAP Programming
 tagline: powerful friend of robust & efficient programming in ABAP
 tags: ABAP debugging
-categories: ABAP
+categories: ABAP ab
 ---
 
 When I just joint SAP and became a ABAPer, I longed for a Logging/Issue Tracking mechanism. Saddly I only got it after I read 
