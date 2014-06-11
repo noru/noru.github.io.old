@@ -7,17 +7,17 @@ categories: ABAP
 ---
 
 
-Using TCode **SAAB**, one can create a new checkpoint group(with namespace maybe), activate 3 kinds of check point:
+`"table_line"`: can be used as a general line type of an internal table. This is particularly useful for tables whose line type does not have a structure.
 
-> Breakpoints    
-> Logpoints    
-> Assertions.  
+Example:
 
-and manage(check/delete) log records.  
-On ABAP side, insert the checkpoint like this:
+> DATA: wa   TYPE i,   
+>      itab TYPE SORTED TABLE OF i WITH UNIQUE KEY TABLE_LINE.   
+>...   
+>LOOP AT itab INTO wa WHERE KEY table_line > 5.   
+>  ...   
+>ENDLOOP.   
 
-`BREAK-POINT ID Z_DREW_CPG.`  
-`LOG-POINT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f1' 'f2'.`  
-`ASSERT ID Z_DREW_CPG SUBKEY 'drew' FIELDS 'f3' CONDITION 1 = 2.`  
+There is something more. If the internal table is of object references. The associated class has an attribute NAME. You can access this attribute by specifying TABLE_LINE->NAME in a READ TABLE/LOOP statement.
 
-After activation, these checkpoints will take effect and help you lock down the trouble maker easily.  
+
