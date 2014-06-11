@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "READ TABLE" Statement in ABAP
+title: READ TABLE Statement in ABAP
 tagline: usage and tips
 tags: ABAP tips READ_TABLE
 categories: ABAP
 ---
 
 
-#### `"table_line"`
+#### No Structure? use `"table_line"`
 can be used as a general line type of an internal table. This is particularly useful for tables whose line type does not have a structure.
 
 Example:
