@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "READ TABLE" Statement in ABAP
-tagline: powerful friend of robust & efficient programming in ABAP
-tags: ABAP debugging
+tagline: 
+tags: ABAP tips
 categories: ABAP
 ---
 
