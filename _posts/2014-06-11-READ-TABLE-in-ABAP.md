@@ -6,10 +6,10 @@ tags: ABAP tips READ_TABLE
 categories: ABAP
 ---
 
-### * `sy-tabix` is set!
+### * TIP 1: `sy-tabix` is set!
 >(Boooo...) yeah, it is lame.
 
-### * No Structure? use `"table_line"`
+### * TIP 2: No Structure? use `"table_line"`
 >It can be used as a general line type of an internal table. This is particularly useful for tables whose line type does not have a structure.
 
 Example:
@@ -24,7 +24,7 @@ Example:
 >There is something more. If the internal table is of object references. The associated class has an attribute NAME. You can access this attribute by specifying `TABLE_LINE->NAME` in a `READ TABLE`/`LOOP` statement.
 
 
-### * Alternative: Table Expressions!
+### TIP 3: * Alternative: Table Expressions!
 >A table expression reads a row from an internal table and returns it as a result.
 Syntax `... itab[ itab_line ] ... `
 
