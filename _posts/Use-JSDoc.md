@@ -1,0 +1,59 @@
+---
+layout: post
+title: Use JSDoc in your JSCode
+tagline: stop being a wildling!
+tags: JavaScript Web
+categories: JavaScript Web
+---
+
+In Java world, there is a famous tool for document generation: JavaDoc. This technic provided by SUN can extract comments in source code and generate a whole set of API document, not only powerfull but also a good practice and every programmer should implement this process in their daily work, no matter what programming language you're using or even have the need for document or not.
+
+And good news, JavaScript got JSDoc [(whole deal)](http://http://usejsdoc.org/). Basically it has little differences with JavaDoc.
+
+Here's a sample with common JSDoc comments:
+
+ 
+/** 
+* @fileOverview JSDoc Sample
+* @author <a href="noru.github.com">Drew</a> 
+* @version 0.1 
+*/ 
+/** 
+* @author Drew Xiu
+* @constructor Person 
+* @description Description of this class 
+* @see <a href="http://usejsdoc.org/">JSDoc Home</a >. 
+* @example new Parent(“Drew”,15); 
+* @since version 0.1 
+* @param {String} username 
+* @param {Num} age
+*/ 
+function Person(username,age) 
+{ 
+/** 
+* @description {Sting} name
+* @field 
+*/ 
+this.username = username; 
+/** 
+* @description {Num} age
+* @field 
+*/ 
+this.age = age 
+/** 
+* @description
+* @param {String} content
+*/ 
+this.say = function(content) 
+{ 
+alert(this.username+" say :"+content); 
+} 
+/** 
+* @description 
+* @return {String} return parameter
+* @see Person#say 
+*/ 
+this.getJson = function(){ 
+return "{name:"+this.username+",age"+this.age+"}"; 
+} 
+} 
