@@ -6,7 +6,7 @@
 /* Compass Vars */
 /* Override some defaults */
 /* line 13, ../_sass/_base.scss */
-operator {
+.operator {
   color: blue;
 }
 
