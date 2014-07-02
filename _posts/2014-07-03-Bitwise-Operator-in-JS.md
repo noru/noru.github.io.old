@@ -13,10 +13,19 @@ Slick trick? I dig that! Got to grasp it.
 
 `!!` turns something into boolean, that's no news. However it took me a while to remember `~`. It's bitwise operator in JavaScript, and C++, and Java. A bitwise NOT operator: trun every 1 to 0 of a number(binary-wise) and vice versa. Basically `~foo` means `-(foo + 1)`. ([Why is that?](https://en.wikipedia.org/wiki/Signed_number_representations#Signed_magnitude_representation))
 
+Turns out the `!!~` is only another version of `something >=0`.  Huh, I got the "unnecessarily" means.
 
-### 1. No One Uses All Their Spaces    
-> Everybody knows that...
-   
+A little bit dispointed but still, a few awesome tricks about bitwise operators.
+
+### Parses hexadecimal value to get RGB color values.
+
+    var hex = 'ffaadd';   
+    var rgb = parseInt(hex, 16);    
+    
+    var red   = (rgb >> 16) & 0xFF;   
+    var green = (rgb >> 8) & 0xFF;     
+    var blue  = rgb & 0xFF;   
+    
 ### 2. Cluster Repository: Spread it out      
 > Your space seems contin
    
