@@ -70,7 +70,8 @@ h2 {
 pre, code {
   font-family:"PT Mono", serif;
   color: white;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: lighter;
 }
 
 /* line 65, ../_sass/_base.scss */
