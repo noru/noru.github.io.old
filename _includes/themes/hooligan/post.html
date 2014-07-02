@@ -38,9 +38,8 @@
       <section>
         <h4>Categories</h4>
         <ul class="tag_box">
-          {{ page.categories }}
           {% assign tags_list = page.categories %}
-          {% include JB/categories_list %}
+          {% include JB/tags_list %}
         </ul>
       </section>
     {% endif %}   
