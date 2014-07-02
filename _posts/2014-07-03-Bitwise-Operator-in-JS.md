@@ -17,14 +17,16 @@ Turns out the `!!~` is only another version of `something >=0`.  Huh, I got the 
 
 A little bit dispointed but still, a few awesome tricks about bitwise operators.
 
-### Double `~~`
+### `~~`: You want interger?
 
 `~~` is probably something like:   
                         <code>typeof foo === 'number' && !isNaN(foo) && foo !== Infinity
                         ? foo > 0 ? Math.floor(foo) : Math.ceil(foo) : 0;</code>
-in sample form:
+
+In sample form:
     `-(-(foo + 1) + 1)`
-or briefly speaking: gives a int by any object.
+or briefly speaking: gives a int by any object, __in a lot faster way__, generally it can replace `Math.floor()`.
+PS: Alternatively, ' | 0 '.
 
 ### Parses hexadecimal value to get RGB color values.
 
@@ -35,8 +37,19 @@ or briefly speaking: gives a int by any object.
     var green = (rgb >> 8) & 0xFF;     
     var blue  = rgb & 0xFF;   
     
-### 2. Cluster Repository: Spread it out      
-> Your space seems contin
+this usage can be applied on a lot of cases I assume, such as IP address operations.
+    
+### Toggle: `^` 
+Used like `value ^= 1` will change on every call the value to 0, 1, 0, 1 ...
+If we pass that value as a Statement into a Conditional operator (?:) like
+
+`statement ? (if true) : (if false)`
+
    
-### 3. Duplicated Data: Hash it, hash it, hash it!      
-> They tricked you, in a good way though. Many users stored the very same data in there repository but it's only one (or numberable, I don't k
+### Is Odd? ` & 1`
+1 = ...0000001, and every digits after the 1st digit got a "0" after the __&__ operation. So it is a fancy way to determine odd number.
+
+I believe there are many other good example of using bitwise operators and I'll keep updating this thread. Their neat style and super effeciency are really attractable. Yeah, sometime a little brainfuck, but who couldn say that's not another advantage?
+
+
+
