@@ -63,11 +63,7 @@ If we pass that value as a Statement into a Conditional operator (?:) like
 
 I believe there are many other good example of using bitwise operators and I'll keep updating this thread. Their neat style and super effeciency are really attractable. Yeah, sometime a little brainfuck, but who couldn say that's not another advantage?
 
-<code>
-<p>123</p>
-<a>123</a>
-<div>123</div>
-</code>
+<code><p>123</p><a>123</a><div>123</div></code>
 
 
 
