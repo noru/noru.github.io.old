@@ -18,7 +18,7 @@ Turns out the `!!~` is only another version of `something >=0`.  Huh, I got the 
 A little bit dispointed but still, a few awesome tricks about bitwise operators.
 
 -----   
-### `~~`: You want interger?   
+__`~~`: You want interger?   __
 
 
 `~~` is probably something like:   
