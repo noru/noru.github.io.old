@@ -9,7 +9,7 @@ categories: Javacript
 I was sauntering on GitHub and ended up in [JSHint](https://github.com/rwaldron/idiomatic.js/), a static code analysis tool for JavaScript. When I was looking at the sample code in idomatic style I saw this:     
 `!!~array.indexOf("a");`    
 I was like, "WTF is this shit?". And its comment says its "__unnecessarily clever__".    
-Slink trick? I dig that! Got to grasp it.    
+Slick trick? I dig that! Got to grasp it.    
 
 ### 1. No One Uses All Their Spaces    
 > Everybody knows that...
