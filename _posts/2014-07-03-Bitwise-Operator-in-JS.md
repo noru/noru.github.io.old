@@ -53,7 +53,7 @@ If we pass that value as a Statement into a Conditional operator (?:) like
 `statement ? (if true) : (if false)`
 
 -----   
-> _Is Odd?_ `&1`   
+> __Is Odd?__ `&1`   
 
  
    
