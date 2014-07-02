@@ -33,7 +33,7 @@ PS: Alternatively, ' | 0 '.
 > __Parses hexadecimal value to get RGB color values.__
   
 
-    <operator>var</operator> hex = 'ffaadd';   
+    <p class="operator">var</p> hex = 'ffaadd';   
     var rgb = parseInt(hex, 16);    
     
     var red   = (rgb >> 16) & 0xFF;   
