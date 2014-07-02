@@ -33,7 +33,7 @@ PS: Alternatively, ' | 0 '.
 > __Parses hexadecimal value to get RGB color values.__
   
 
-    <p class="operator">var</p> hex = 'ffaadd';   
+    var hex = 'ffaadd';   
     var rgb = parseInt(hex, 16);    
     
     var red   = (rgb >> 16) & 0xFF;   
@@ -62,6 +62,8 @@ If we pass that value as a Statement into a Conditional operator (?:) like
 -----   
 
 I believe there are many other good example of using bitwise operators and I'll keep updating this thread. Their neat style and super effeciency are really attractable. Yeah, sometime a little brainfuck, but who couldn say that's not another advantage?
+
+<code><p>123</p></code>
 
 
 
