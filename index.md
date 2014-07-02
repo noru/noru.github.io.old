@@ -3,6 +3,7 @@ layout: page
 title: Hi Asshole!
 tagline: I Wish You Hurt Yourself While You Sleep
 ---
+<link rel="shortcut icon" type="image/x-icon" href="http://docsteach.org/images/youtube-icon-16x16.png">
 
 <ul class="entries">
             {% for post in site.posts limit:1 %}
