@@ -44,9 +44,11 @@
     {% if page.categories %}
       <section>
         <h4>Category</h4>
-        <span class="category">
+        <ul class="tag_box">
           {{ page.categories }}
-        </span>
+          {% assign tags_list = page.categories %}
+          {% include JB/tags_list %}
+        </ul>
       </section>
     {% endif %}   
     {% unless page.tags == empty %}
