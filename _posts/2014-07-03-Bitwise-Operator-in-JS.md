@@ -11,6 +11,9 @@ I was sauntering on GitHub and ended up in [JSHint](https://github.com/rwaldron/
 I was like, "WTF is this shit?". And its comment says its "__unnecessarily clever__".    
 Slick trick? I dig that! Got to grasp it.    
 
+`!!` turns something into boolean, that's no news. However it took me a while to remember `~`. It's bitwise operator in JavaScript, and C++, and Java. A bitwise NOT operator: trun every 1 to 0 of a number(binary-wise) and vice versa. Basically `~foo` means `-(foo + 1)`. ([Why is that?](https://en.wikipedia.org/wiki/Signed_number_representations#Signed_magnitude_representation))
+
+
 ### 1. No One Uses All Their Spaces    
 > Everybody knows that...
    
