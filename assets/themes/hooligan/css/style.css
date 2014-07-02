@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
-@import url(http://fonts.googleapis.com/css?family=Nunito);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 /* Partials */
 /* Theme Vars */
 /* Compass Vars */
@@ -15,7 +15,7 @@ body {
   color: #bbb;
   text-shadow: 1px 1px 1px #000;
   height: 100%;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
 }
 
