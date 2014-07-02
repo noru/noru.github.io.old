@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bitwise Operator in JS
+title: Bitwise Operator in JavaScript
 tagline: you think you're a smartpants, huh?
 tags: Javascript Tips Tricks Bitwise_Operator
 categories: Javacript
@@ -30,10 +30,10 @@ or briefly speaking: gives a int by any object, __in a lot faster way__, general
 PS: Alternatively, ' | 0 '.
 
 -----   
-> __Parses hexadecimal value to get RGB color values.___
+> __Parses hexadecimal value to get RGB color values.__
   
 
-    var hex = 'ffaadd';   
+    <operator>var</operator> hex = 'ffaadd';   
     var rgb = parseInt(hex, 16);    
     
     var red   = (rgb >> 16) & 0xFF;   
