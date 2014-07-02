@@ -65,6 +65,7 @@ I believe there are many other good example of using bitwise operators and I'll 
 
 <code>
 <a class="statement">var </a>i <a class="operator">= </a> <a class="integer">100</a><a class="operator">;</a>
+<br>
 <a class="statement">var </a>i <a class="operator">= </a> <a class="integer">100</a><a class="operator">;</a>
 </code>
 
