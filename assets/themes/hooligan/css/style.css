@@ -7,8 +7,22 @@
 /* Override some defaults */
 /* line 13, ../_sass/_base.scss */
 .operator {
-  color: blue;
+  color: #ccff00;
 }
+.statement {
+  color: #FFCC00;
+}
+.integer {
+  color: #6cefff;
+}
+.string {
+  color: #6cefff;
+}
+.normal {
+  color: #947575;
+}
+
+
 
 html, body {
   background-color: #2a2a2a;
