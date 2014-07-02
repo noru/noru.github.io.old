@@ -68,7 +68,7 @@ h2 {
 
 /* line 61, ../_sass/_base.scss */
 pre, code {
-  
+  font-family:"Roboto Slab", serif;
   color: #ccc;
 }
 
