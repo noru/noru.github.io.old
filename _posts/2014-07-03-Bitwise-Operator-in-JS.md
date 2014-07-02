@@ -20,7 +20,6 @@ A little bit dispointed but still, a few awesome tricks about bitwise operators.
 -----   
 > `~~`: __You want interger?__
 
-
 `~~` is probably something like:   
                         <code>typeof foo === 'number' && !isNaN(foo) && foo !== Infinity
                         ? foo > 0 ? Math.floor(foo) : Math.ceil(foo) : 0;</code>
@@ -31,8 +30,7 @@ or briefly speaking: gives a int by any object, __in a lot faster way__, general
 PS: Alternatively, ' | 0 '.
 
 -----   
-### Parses hexadecimal value to get RGB color values.    
-
+> __Parses hexadecimal value to get RGB color values.___
   
 
     var hex = 'ffaadd';   
@@ -45,7 +43,7 @@ PS: Alternatively, ' | 0 '.
 this usage can be applied on a lot of cases I assume, such as IP address operations.
     
 -----   
-### Toggle: `^`    
+> __Toggle:__ `^`   
 
      
 
@@ -55,7 +53,7 @@ If we pass that value as a Statement into a Conditional operator (?:) like
 `statement ? (if true) : (if false)`
 
 -----   
-### Is Odd? `&1`   
+> _Is Odd?_ `&1`   
 
  
    
