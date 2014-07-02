@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-@impornt url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@impornt url(http://fonts.googleapis.com/css?family=PT+Mono);
 /* Partials */
 /* Theme Vars */
 /* Compass Vars */
@@ -68,8 +68,9 @@ h2 {
 
 /* line 61, ../_sass/_base.scss */
 pre, code {
-  font-family:"Roboto Slab", serif;
-  color: #ccc;
+  font-family:"PT Mono", serif;
+  color: #eb6c9f
+  font-size: 12px;
 }
 
 /* line 65, ../_sass/_base.scss */
@@ -80,7 +81,6 @@ pre > code {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
-  font-family:"Roboto Slab", serif;
 }
 
 /* line 74, ../_sass/_base.scss */
