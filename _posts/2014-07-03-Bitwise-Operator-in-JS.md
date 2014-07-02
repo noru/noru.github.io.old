@@ -55,6 +55,8 @@ If we pass that value as a Statement into a Conditional operator (?:) like
    
 1 = ...0000001, and every digits after the 1st digit got a "0" after the __&__ operation. So it is a fancy way to determine odd number.
 
+-----
+
 I believe there are many other good example of using bitwise operators and I'll keep updating this thread. Their neat style and super effeciency are really attractable. Yeah, sometime a little brainfuck, but who couldn say that's not another advantage?
 
 
