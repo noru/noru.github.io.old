@@ -18,7 +18,7 @@ Turns out the `!!~` is only another version of `something >=0`.  Huh, I got the 
 A little bit dispointed but still, a few awesome tricks about bitwise operators.
 
 -----   
-### `~~`: You want interger?
+### `~~`: You want interger?   
 -----   
 
 `~~` is probably something like:   
@@ -31,7 +31,7 @@ or briefly speaking: gives a int by any object, __in a lot faster way__, general
 PS: Alternatively, ' | 0 '.
 
 -----   
-### Parses hexadecimal value to get RGB color values.
+### Parses hexadecimal value to get RGB color values.    
 -----   
 
     var hex = 'ffaadd';   
@@ -44,7 +44,7 @@ PS: Alternatively, ' | 0 '.
 this usage can be applied on a lot of cases I assume, such as IP address operations.
     
 -----   
-### Toggle: `^` 
+### Toggle: `^`    
 -----      
 
 Used like `value ^= 1` will change on every call the value to 0, 1, 0, 1 ...
@@ -53,7 +53,7 @@ If we pass that value as a Statement into a Conditional operator (?:) like
 `statement ? (if true) : (if false)`
 
 -----   
-### Is Odd? `&1`
+### Is Odd? `&1`   
 -----    
    
 1 = ...0000001, and every digits after the 1st digit got a "0" after the __&__ operation. So it is a fancy way to determine odd number.
