@@ -25,3 +25,9 @@ dog's back.
 > This is the second paragraph in the blockquote.
 >
 > ## This is an H2 in a blockquote
+
+
+<pre>
+<a class="statement">var </a>i <a class="operator">= </a> <a class="integer">100</a><a class="operator">;</a><a class=comment>    // this is comment</a>
+<a class="statement">var </a>i <a class="operator">= </a> <a class="integer">100</a><a class="operator">;</a>
+</pre>
