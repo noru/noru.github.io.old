@@ -129,7 +129,8 @@ hr {
 .navbar div.navbar-inner a.brand {
   padding: 10px 20px;
   font-weight: bold;
-  text-align: center;
+  margin-top: auto;
+  margin-botton: auto;
 }
 /* line 90, ../_sass/_base.scss */
 .navbar div.navbar-inner ul.nav:first-child li a {
