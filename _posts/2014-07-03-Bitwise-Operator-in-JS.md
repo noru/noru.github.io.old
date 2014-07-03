@@ -7,7 +7,7 @@ categories: Javacript
 ---
 
 I was sauntering on GitHub and ended up in [JSHint](https://github.com/rwaldron/idiomatic.js/), a static code analysis tool for JavaScript. When I was looking at the sample code in idomatic style I saw this:     
-`!!~array.indexOf("a");`    
+`<a class="operator">!!~</a>array.indexOf("a");`    
 I was like, "WTF is this shit?". And its comment says its "__unnecessarily clever__".    
 Slick trick? I dig that! Got to grasp it.    
 
@@ -32,14 +32,14 @@ PS: Alternatively, ' | 0 '.
 -----   
 > __Parses hexadecimal value to get RGB color values.__
   
+<pre>
+<a class="statement">var </a>hex <a class="operator">=</a> <a class="string">'ffaadd'</a><a class="operator">;</a>   
+var rgb = parseInt(hex, 16);    
 
-    var hex = 'ffaadd';   
-    var rgb = parseInt(hex, 16);    
-    
-    var red   = (rgb >> 16) & 0xFF;   
-    var green = (rgb >> 8) & 0xFF;     
-    var blue  = rgb & 0xFF;   
-    
+var red   = (rgb >> 16) & 0xFF;   
+var green = (rgb >> 8) & 0xFF;     
+var blue  = rgb & 0xFF;   
+</pre>    
 this usage can be applied on a lot of cases I assume, such as IP address operations.
     
 -----   
