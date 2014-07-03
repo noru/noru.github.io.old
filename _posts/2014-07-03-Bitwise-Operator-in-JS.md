@@ -34,7 +34,7 @@ PS: Alternatively, ' | 0 '.
   
 <pre>
 <a class="statement">var </a>hex <a class="operator">=</a> <a class="string">'ffaadd'</a><a class="operator">;</a>   
-var rgb = parseInt(hex, 16);    
+<a class="statement">var </a>rgb <a class="statement">var </a> parseInt<a class="operator">(</a>hex<a class="operator">,</a> <a class="integer">16</a><a class="operator">);</a>    
 
 var red   = (rgb >> 16) & 0xFF;   
 var green = (rgb >> 8) & 0xFF;     
