@@ -115,7 +115,7 @@ hr {
 /* Layout */
 /* line 81, ../_sass/_base.scss */
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: auto;
 }
 /* line 83, ../_sass/_base.scss */
 .navbar div.navbar-inner {
