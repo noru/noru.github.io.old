@@ -137,6 +137,10 @@ hr {
   padding: 21px 10px 8px;
 }
 
+.nav-collapse :nth-child(2) {
+  margin-bottom: 0;
+}
+
 /* line 99, ../_sass/_base.scss */
 .container > footer {
   margin-top: 20px;
