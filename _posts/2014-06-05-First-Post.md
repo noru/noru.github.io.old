@@ -29,5 +29,5 @@ dog's back.
 
 <pre>
 <a class="statement">var </a>i <a class="operator">= </a> <a class="integer">100</a><a class="operator">;</a><a class="comment">    // this is comment</a>
-<a class="statement">var </a>i <a class="operator">= </a> <a class="integer">100</a><a class="operator">;</a>
+<a class="statement">var </a>normal_variable <a class="operator">= </a> <a class="string">"Hello World!"</a><a class="operator">;</a>
 </pre>
