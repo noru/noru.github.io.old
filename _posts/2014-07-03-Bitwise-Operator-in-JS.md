@@ -2,7 +2,7 @@
 layout: post
 title: Bitwise Operator in JavaScript
 tagline: you think you're a smartpants, huh?
-tags: Javascript Tips Tricks Bitwise_Operator
+tags: JavaScript Tips Tricks Bitwise_Operator
 categories: Javacript
 ---
 
