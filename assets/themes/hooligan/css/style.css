@@ -8,6 +8,7 @@
 }
 .statement {
   color: #FFCC00;
+  font-weight: bold;
 }
 .integer {
   color: #6cefff;
