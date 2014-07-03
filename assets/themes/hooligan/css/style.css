@@ -1,13 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @impornt url(http://fonts.googleapis.com/css?family=PT+Mono);
-/* Partials */
-/* Theme Vars */
-/* Compass Vars */
-/* Override some defaults */
-/* line 13, ../_sass/_base.scss */
+
+/* Self defined class, for code display */
 .operator {
-  color: #ccff00;
+  color: #FA8787;
 }
 .statement {
   color: #FFCC00;
@@ -26,6 +23,11 @@
 }
 
 
+/* Partials */
+/* Theme Vars */
+/* Compass Vars */
+/* Override some defaults */
+/* line 13, ../_sass/_base.scss */
 html, body {
   background-color: #2a2a2a;
   background: url(../images/bgs/body.png) repeat;
