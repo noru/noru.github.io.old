@@ -2,7 +2,7 @@
 layout: post
 title: READ TABLE Statement in ABAP
 tagline: usage and tips
-tags: ABAP tips READ_TABLE
+tags: ABAP Tips READ_TABLE
 categories: ABAP
 ---
 
