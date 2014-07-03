@@ -137,7 +137,7 @@ hr {
   padding: 21px 10px 8px;
 }
 
-.nav-collapse :nth-child(2) {
+.nav-collapse :nth-child(2) ul li a {
   margin-bottom: 0;
 }
 
