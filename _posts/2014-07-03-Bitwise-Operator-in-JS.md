@@ -26,7 +26,7 @@ A little bit dispointed but still, a few awesome tricks about bitwise operators.
 
 In sample form:
     `-(-(foo + 1) + 1)`
-or briefly speaking: gives a int by any object, __in a lot faster way__, generally it can replace `Math.floor()`.
+or briefly speaking: gives a int by any object, _in a lot faster way_, generally it can replace `Math.floor()`.
 PS: Alternatively, ' | 0 '.
 
 -----   
