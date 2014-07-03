@@ -9,9 +9,9 @@ tagline: I Wish You Hurt Yourself While You Sleep
               <li>
                 <a href="{{ post.url }}">
                 <h2>{{ post.title }}</h2>
+                </a>
                 <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
                 <div>{{ post.content }}</div>
-                </a>
               </li>
             {% endfor %}
 </ul>
