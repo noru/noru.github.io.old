@@ -50,7 +50,7 @@ this usage can be applied on a lot of cases I assume, such as IP address operati
 Used like `value ^= 1` will change on every call the value to 0, 1, 0, 1 ...
 If we pass that value as a Statement into a Conditional operator (?:) like
 
-`statement ? (if true) : (if false)`
+`value ? (if true) : (if false)`
 
 -----   
 > __Is Odd?__ `&1`   
