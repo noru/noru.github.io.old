@@ -7,7 +7,7 @@ categories: Javacript
 ---
 
 I was sauntering on GitHub and ended up in [JSHint](https://github.com/rwaldron/idiomatic.js/), a static code analysis tool for JavaScript. When I was looking at the sample code in idomatic style I saw this:     
-`<a class="operator">!!~</a>array.indexOf("a");`    
+`!!~array.indexOf("a");`    
 I was like, "WTF is this shit?". And its comment says its "__unnecessarily clever__".    
 Slick trick? I dig that! Got to grasp it.    
 
