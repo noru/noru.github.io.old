@@ -3,7 +3,7 @@ layout: post
 title: Bitwise Operator in JavaScript
 tagline: you think you're a smartpants, huh?
 tags: JavaScript Tips Tricks Bitwise_Operator
-categories: Javacript
+categories: Javascript
 ---
 
 I was sauntering on GitHub and ended up in [JSHint](https://github.com/rwaldron/idiomatic.js/), a static code analysis tool for JavaScript. When I was looking at the sample code in idomatic style I saw this:     
