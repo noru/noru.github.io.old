@@ -6,6 +6,10 @@ tags: ABAP COMMIT_WORK LUW SAP_LUW
 categories: ABAP
 ---
 
+I can't remember when and why I use the statement `COMMIT WORK` for the first time, however I do know that I was being an epigone when I used it. I, like a lot of my colleagues I believe, seldem perform DB actions other than read. Even when I do have insert/update without existing FM, I would not come out of using this statment myself. To me, using `COMMIT WORK` is merely a mysterious custom just like drop something on the ground, I never bother to ask why it did not go the other way around. Funny thing is, I'm not alone.
+
+
+
 When I just joint SAP and became a ABAPer, I longed for a Logging/Issue Tracking mechanism. Saddly I only got it after I read 
 <a href="http://scn.sap.com/community/abap/testing-and-troubleshooting/blog/2011/11/09/checkpoint-group-the-powerful-friend-of-every-abaper-but-beware">this article</a>.
 
