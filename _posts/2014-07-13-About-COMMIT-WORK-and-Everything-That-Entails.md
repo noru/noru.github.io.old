@@ -41,7 +41,7 @@ Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s (me
 
 ---   
 
-Until now I still have a tangible answer for everything seems fine with or without `COMMIT WORK`. After that I did a little <a href="http://noru.github.io/assets/image/commit.jpg">experiment</a>, and still can't find what I want. Then a word called “All or Nothing” comes into my mind.     
+Until now I still don't have a tangible answer for everything seems fine with or without `COMMIT WORK`. After that I did a little <a href="http://noru.github.io/assets/image/commit.jpg">experiment</a>, and still can't find what I want. Then a word called “All or Nothing” comes into my mind.     
 
 Quote from <a href="http://en.wikipedia.org/wiki/Database_transaction">Wikipedia</a>.:   
    
