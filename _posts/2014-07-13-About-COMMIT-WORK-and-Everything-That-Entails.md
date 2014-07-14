@@ -16,7 +16,7 @@ Until someday we were told to remove all `COMMIT WORK` statement in our code and
 
 To understand `COMMIT WORK` there is a couple of prerequisites:      
 
->  - 	LUW (Logical Unit of Work, A.K.A Database Transaction), including
+>  - 	LUW (Logical Unit of Work, A.K.A Database Transaction), including   
 >> <a href="http://help.sap.com/saphelp_nw04s/helpdata/en/41/7af4bca79e11d1950f0000e82de14a/content.htm">DB LUW</a>      
 >> <a href="http://help.sap.com/saphelp_47x200/helpdata/en/41/7af4bfa79e11d1950f0000e82de14a/content.htm">SAP LUW</a>
    
