@@ -33,8 +33,10 @@ Here comes the first reason we shall not use this statement:
 That is, when implicit database commit happened, you don’t have to call explicit database commits such as `COMMIT WORK` or function module `DB_COMMIT( )`(unlike `COMMIT WORK`, this FM performs a sole task of commit without triggering other tasks, refer to documentation).    
    
  One of the situation that triggers an implicit commit is:     
- 
-#### -   HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework    
+
+<pre> 
+HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework    
+</pre>
    
 Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s(mentioned in <a href="https://jam4.sapjam.com/blogs/show/HZa74OUDc0HMHcfHSaqWku">this blog</a>) and it also works fine.     
 
@@ -56,7 +58,7 @@ The service framework of OData has already included us in a SAP LUW and provided
 
 ---   
 
-I’d believe this is more persuasive than the ‘Performance’ or the first reason. However I still don’t have the whole picture of it and my conclusion may not precise.  May experts can give a thorough explanation about it. And the lesson I learnt is(also my suggetstion):   
+I’d believe this is more persuasive than the ‘Performance’ or the first reason. However I still don’t have the whole picture of it and my conclusion may not precise.  May experts can give a thorough explanation about it. And the lesson I learnt is (also my suggetstion):   
 
 
 > -   __DO NOT use ‘COMMIT WORK’ unless you’re introducing a SAP LUW in your project.__   
