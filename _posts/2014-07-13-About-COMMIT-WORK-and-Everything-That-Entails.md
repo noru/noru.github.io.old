@@ -37,7 +37,7 @@ That is, when implicit database commit happened, you don’t have to call explic
 <pre>HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework    
 </pre>
    
-Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s(mentioned in <a href="https://jam4.sapjam.com/blogs/show/HZa74OUDc0HMHcfHSaqWku">this blog</a>) and it also works fine.     
+Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s (mentioned in <a href="https://jam4.sapjam.com/blogs/show/HZa74OUDc0HMHcfHSaqWku">this blog</a>) and it also works fine.     
 
 ---   
 
