@@ -28,7 +28,7 @@ After went through some documents, I found that the `COMMIT WORK` statement is a
 
 Here comes the first reason we shall not use this statement:   
 
-#### -   In SAP system, database commits and rollbacks can be triggered implicitly.   
+#### - REASON 1:  In SAP system, database commits and rollbacks can be triggered implicitly.   
    
 That is, when implicit database commit happened, you don’t have to call explicit database commits such as `COMMIT WORK` or function module `DB_COMMIT( )`(unlike `COMMIT WORK`, this FM performs a sole task of commit without triggering other tasks, refer to documentation).    
    
@@ -50,7 +50,7 @@ Quote from <a href="http://en.wikipedia.org/wiki/Database_transaction">Wikipedia
 
 Then I started to realize that it may be the reason:   
 
-#### -   Explicit Commits may be a violation of “All or Nothing”.   
+#### -   REASON 2:  Explicit Commits may be a violation of “All or Nothing”.   
 
 
 The service framework of OData has already included us in a SAP LUW and provided an explicit commit on a higher level. If we do it again, there will be no chance to roll back to the original status where the transaction begins.    
