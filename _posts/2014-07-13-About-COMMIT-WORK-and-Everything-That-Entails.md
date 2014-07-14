@@ -16,12 +16,12 @@ Until someday we were told to remove all `COMMIT WORK` statement in our code and
 
 To understand `COMMIT WORK` there is a couple of prerequisites:      
 
-### 	LUW(Logical Unit of Work, aka Database Transaction), including
+#### 	LUW(Logical Unit of Work, aka Database Transaction), including
    
 > DB LUW      
 > SAP LUW      
 
-### 	And one of its most important propositions: “All or Nothing”.      
+#### 	And one of its most important propositions: “All or Nothing”.      
    
 ---
 After went through some documents, I found that the `COMMIT WORK` statement is a part of SAP LUW, it closes the current SAP LUW and opens a new one.      
@@ -48,7 +48,7 @@ Quote for <a href="http://en.wikipedia.org/wiki/Database_transaction">Wikipedia<
 
 Then I started to realize that it may be the reason:   
 
-####                  Explicit Commits may be a violation of “All or Nothing”.   
+#### Explicit Commits may be a violation of “All or Nothing”.   
 
 
 The service framework of OData has already included us in a SAP LUW and provided an explicit commit on a higher level. If we do it again, there will be no chance to roll back to the original status where the transaction begins.    
