@@ -8,13 +8,14 @@ categories: ABAP
 
 I can't remember when and why I use the statement `COMMIT WORK` for the first time, however I do know that I was being an epigone when I used it. I, like a lot of my colleagues I believe, seldom perform DB actions other than read. Even when I do have insert/update without existing API, I would not come out of using this statement myself. To me, using `COMMIT WORK` is merely a mysterious custom just like drop something on the ground, I never bother to ask why it did not go straight up. Funny thing is, I'm not alone.   
 
-Until someday we were told to remove all `COMMIT WORK` statement in our code and no one provided a solid reason. The most acceptable reason is regarding performance. I don’t think it’s cogent. Since when a suppose-to-be commit may cause a performance issue? Even if it does, it won’t be a huge impact(not huge enough to involve people on level that high). So I started pressing F1 and doing my delay homework.   
+Until someday we were told to remove all `COMMIT WORK` statement in our code and no one provided a solid reason. The most acceptable reason is regarding performance. I don’t think it’s cogent. Since when a suppose-to-be commit may cause a performance issue? Even if it does, it won’t be a huge impact(not huge enough to involve people on level that high). So I started pressing F1 and doing my delay homework.    
 
 To understand `COMMIT WORK` there is a couple of prerequisites:      
 
-### 	LUW(Logical Unit of Work, aka Database Transaction)   
-#### 	DB LUW      
-####	 SAP LUW      
+### 	LUW(Logical Unit of Work, aka Database Transaction), including
+> DB LUW      
+> SAP LUW      
+
 ### 	And one of its most important propositions: “All or Nothing”.      
    
 After went through some documents, I found that the `COMMIT WORK` statement is a part of SAP LUW, it closes the current SAP LUW and opens a new one.      
