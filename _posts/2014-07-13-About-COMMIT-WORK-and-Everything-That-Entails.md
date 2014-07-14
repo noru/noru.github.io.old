@@ -18,7 +18,7 @@ To understand `COMMIT WORK` there is a couple of prerequisites:
 
 #### -   	LUW(Logical Unit of Work, aka Database Transaction), including
    
-> DB LUW      
+> <a href="www.baidu.com">DB LUW</a>      
 > SAP LUW      
 
 #### -    And one of its most important propositions: “All or Nothing”.      
