@@ -10,7 +10,7 @@ I can't remember when and why I use the statement `COMMIT WORK` for the first ti
 
 ---   
 
-Until someday we were told to remove all `COMMIT WORK` statement in our code and no one provided a solid reason. The most acceptable reason is regarding performance. I don’t think it’s cogent. Since when a suppose-to-be commit may cause a performance issue? Even if it does, it won’t be a huge impact(not huge enough to involve people on level that high). So I started pressing F1 and doing my delay homework.    
+Until someday we were told to remove all `COMMIT WORK` statement in our code and no one provided a solid reason. The most acceptable reason is regarding performance. I don’t think it’s cogent. Since when a suppose-to-be commit may cause a performance issue? Even if it does, it won’t be a huge impact(not huge enough to involve people on level that high). So I started pressing F1 and doing my delayed homework.    
 
 ---   
 
