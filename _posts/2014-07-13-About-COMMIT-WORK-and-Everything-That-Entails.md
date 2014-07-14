@@ -11,6 +11,7 @@ I can't remember when and why I use the statement `COMMIT WORK` for the first ti
 Until someday we were told to remove all `COMMIT WORK` statement in our code and no one provided a solid reason. The most acceptable reason is regarding performance. I don’t think it’s cogent. Since when a suppose-to-be commit may cause a performance issue? Even if it does, it won’t be a huge impact(not huge enough to involve people on level that high). So I started pressing F1 and doing my delay homework.   
 
 To understand `COMMIT WORK` there is a couple of prerequisites:      
+
 ### 	LUW(Logical Unit of Work, aka Database Transaction)   
 #### 	DB LUW      
 ####	 SAP LUW      
@@ -19,12 +20,15 @@ To understand `COMMIT WORK` there is a couple of prerequisites:
 After went through some documents, I found that the `COMMIT WORK` statement is a part of SAP LUW, it closes the current SAP LUW and opens a new one.      
 
 Here comes the first reason we shall not use this statement:   
+
 #### In SAP system, database commits and rollbacks can be triggered implicitly.   
 
 That is, when implicit database commit happened, you don’t have to call explicit database commits such as `COMMIT WORK` or function module `DB_COMMIT( )`(unlike `COMMIT WORK`, this FM performs a sole task of commit without triggering other tasks, refer to documentation).    
- One of the situation that triggers an implicit commit is:      
-#### *HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework*     
-Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s(mentioned in this blog) and it also works fine.     
+ One of the situation that triggers an implicit commit is:     
+ 
+#### *HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework*  
+
+Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s(mentioned in <a href="https://jam4.sapjam.com/blogs/show/HZa74OUDc0HMHcfHSaqWku">this blog</a>) and it also works fine.     
 
 Until now I still have a tangible answer for everything seems fine with or without `COMMIT WORK`. After that I did a litter experiment, and still found what I want. Then a word called “All or Nothing” comes into my mind.     
 
