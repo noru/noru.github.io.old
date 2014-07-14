@@ -42,7 +42,8 @@ Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s(men
 
 Until now I still have a tangible answer for everything seems fine with or without `COMMIT WORK`. After that I did a litter experiment, and still found what I want. Then a word called “All or Nothing” comes into my mind.     
 
-Quote for <a href="http://en.wikipedia.org/wiki/Database_transaction">Wikipedia</a>.:
+Quote for <a href="http://en.wikipedia.org/wiki/Database_transaction">Wikipedia</a>.:   
+   
 > Transactions provide an "all-or-nothing" proposition, stating that each work-unit performed in a database must either  complete in its entirety or have no effect whatsoever. Further, the system must isolate each transaction from other transactions, results must conform to existing constraints in the database, and transactions that complete successfully must get written to durable storage.
 
 
