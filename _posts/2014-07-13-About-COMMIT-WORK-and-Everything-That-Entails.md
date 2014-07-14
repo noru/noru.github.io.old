@@ -48,7 +48,7 @@ Quote for <a href="http://en.wikipedia.org/wiki/Database_transaction">Wikipedia<
 
 Then I started to realize that it may be the reason:   
 
-#### Explicit Commits may be a violation of “All or Nothing”.   
+####                  Explicit Commits may be a violation of “All or Nothing”.   
 
 
 The service framework of OData has already included us in a SAP LUW and provided an explicit commit on a higher level. If we do it again, there will be no chance to roll back to the original status where the transaction begins.    
@@ -57,7 +57,7 @@ The service framework of OData has already included us in a SAP LUW and provided
 
 I’d believe this is more persuasive than the ‘Performance’ or the first reason. However I still don’t have the whole picture of it and my conclusion may not precise.  May experts can give a thorough explanation about it. And the lesson I learnt is(also my suggetstion):   
 
-## Do not use ‘COMMIT WORK’ unless you’re creating a SAP LUW in your project.
+### Do not use ‘COMMIT WORK’ unless you’re creating a SAP LUW in your project.
 
 
 
