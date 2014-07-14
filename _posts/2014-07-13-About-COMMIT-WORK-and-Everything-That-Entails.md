@@ -34,8 +34,7 @@ That is, when implicit database commit happened, you don’t have to call explic
    
  One of the situation that triggers an implicit commit is:     
 
-<pre> 
-HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework    
+<pre>HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework    
 </pre>
    
 Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s(mentioned in <a href="https://jam4.sapjam.com/blogs/show/HZa74OUDc0HMHcfHSaqWku">this blog</a>) and it also works fine.     
@@ -44,9 +43,9 @@ Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s(men
 
 Until now I still have a tangible answer for everything seems fine with or without `COMMIT WORK`. After that I did a litter <a href="http://noru.github.io/assets/image/commit.jpg">experiment</a>, and still found what I want. Then a word called “All or Nothing” comes into my mind.     
 
-Quote for <a href="http://en.wikipedia.org/wiki/Database_transaction">Wikipedia</a>.:   
+Quote from <a href="http://en.wikipedia.org/wiki/Database_transaction">Wikipedia</a>.:   
    
-> Transactions provide an "all-or-nothing" proposition, stating that each work-unit performed in a database must either  complete in its entirety or have no effect whatsoever. Further, the system must isolate each transaction from other transactions, results must conform to existing constraints in the database, and transactions that complete successfully must get written to durable storage.
+<pre> Transactions provide an "all-or-nothing" proposition, stating that each work-unit performed in a database must either  complete in its entirety or have no effect whatsoever. Further, the system must isolate each transaction from other transactions, results must conform to existing constraints in the database, and transactions that complete successfully must get written to durable storage.</pre>
 
 
 Then I started to realize that it may be the reason:   
