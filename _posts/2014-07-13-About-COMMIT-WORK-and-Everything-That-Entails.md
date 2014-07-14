@@ -58,8 +58,10 @@ The service framework of OData has already included us in a SAP LUW and provided
 
 I’d believe this is more persuasive than the ‘Performance’ or the first reason. However I still don’t have the whole picture of it and my conclusion may not precise.  May experts can give a thorough explanation about it. And the lesson I learnt is(also my suggetstion):   
 
+<pre>
 > -   __DO NOT use ‘COMMIT WORK’ unless you’re introducing a SAP LUW in your project.__   
-   
+</pre>
+
 ---   
 > Appendix:    
 > ![screenshot]({{ site.url }}/assets/image/commit.jpg)
