@@ -12,8 +12,8 @@ Until someday we were told to remove all `COMMIT WORK` statement in our code and
 
 To understand `COMMIT WORK` there is a couple of prerequisites:   
 > 	LUW(Logical Unit of Work, aka Database Transaction)
->> 	DB LUW
->>	 SAP LUW
+>> 	DB LUW   
+>>	 SAP LUW   
 > 	And one of its most important propositions: “All or Nothing”.   
 
 After went through some documents, I found that the `COMMIT WORK` statement is a part of SAP LUW, it closes the current SAP LUW and opens a new one.   
