@@ -29,13 +29,13 @@ After went through some documents, I found that the `COMMIT WORK` statement is a
 Here comes the first reason we shall not use this statement:   
 
 #### In SAP system, database commits and rollbacks can be triggered implicitly.   
-
+   
 That is, when implicit database commit happened, you don’t have to call explicit database commits such as `COMMIT WORK` or function module `DB_COMMIT( )`(unlike `COMMIT WORK`, this FM performs a sole task of commit without triggering other tasks, refer to documentation).    
    
  One of the situation that triggers an implicit commit is:     
  
-#### HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework  
-
+#### HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework    
+   
 Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s(mentioned in <a href="https://jam4.sapjam.com/blogs/show/HZa74OUDc0HMHcfHSaqWku">this blog</a>) and it also works fine.     
 
 ---   
@@ -46,8 +46,10 @@ Quote for <a href="http://en.wikipedia.org/wiki/Database_transaction">Wikipedia<
 > Transactions provide an "all-or-nothing" proposition, stating that each work-unit performed in a database must either  complete in its entirety or have no effect whatsoever. Further, the system must isolate each transaction from other transactions, results must conform to existing constraints in the database, and transactions that complete successfully must get written to durable storage.
 
 
-Then I started to realize that it may be the reason:    
-#### Explicit Commits may be a violation of “All or Nothing”.
+Then I started to realize that it may be the reason:   
+
+#### Explicit Commits may be a violation of “All or Nothing”.   
+
 
 The service framework of OData has already included us in a SAP LUW and provided an explicit commit on a higher level. If we do it again, there will be no chance to roll back to the original status where the transaction begins.    
 
