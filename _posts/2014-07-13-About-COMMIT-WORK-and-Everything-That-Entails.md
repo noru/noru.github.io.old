@@ -25,7 +25,7 @@ To understand `COMMIT WORK` there is a couple of prerequisites:
 ---
 After went through some documents, I found that the `COMMIT WORK` statement is a part of SAP LUW, it closes the current SAP LUW and opens a new one.      
 
-Here comes the first reason we shall not use this statement:   
+Here comes the first reason why we shall not use this statement:   
 
 ### - REASON 1:  In SAP system, database commits and rollbacks can be triggered implicitly.   
 ---   
