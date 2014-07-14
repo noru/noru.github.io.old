@@ -16,25 +16,25 @@ Until someday we were told to remove all `COMMIT WORK` statement in our code and
 
 To understand `COMMIT WORK` there is a couple of prerequisites:      
 
-#### 	LUW(Logical Unit of Work, aka Database Transaction), including
+#### -   	LUW(Logical Unit of Work, aka Database Transaction), including
    
 > DB LUW      
 > SAP LUW      
 
-#### 	And one of its most important propositions: “All or Nothing”.      
+#### -    And one of its most important propositions: “All or Nothing”.      
    
 ---
 After went through some documents, I found that the `COMMIT WORK` statement is a part of SAP LUW, it closes the current SAP LUW and opens a new one.      
 
 Here comes the first reason we shall not use this statement:   
 
-#### In SAP system, database commits and rollbacks can be triggered implicitly.   
+#### -   In SAP system, database commits and rollbacks can be triggered implicitly.   
    
 That is, when implicit database commit happened, you don’t have to call explicit database commits such as `COMMIT WORK` or function module `DB_COMMIT( )`(unlike `COMMIT WORK`, this FM performs a sole task of commit without triggering other tasks, refer to documentation).    
    
  One of the situation that triggers an implicit commit is:     
  
-#### HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework    
+#### -   HTTP/HTTPS/SMTP communication executed using the Internet Communication Framework    
    
 Which fits our Odata case I presume. I do try to skip all the `COMMIT WORK`s(mentioned in <a href="https://jam4.sapjam.com/blogs/show/HZa74OUDc0HMHcfHSaqWku">this blog</a>) and it also works fine.     
 
@@ -48,7 +48,7 @@ Quote for <a href="http://en.wikipedia.org/wiki/Database_transaction">Wikipedia<
 
 Then I started to realize that it may be the reason:   
 
-#### Explicit Commits may be a violation of “All or Nothing”.   
+#### -   Explicit Commits may be a violation of “All or Nothing”.   
 
 
 The service framework of OData has already included us in a SAP LUW and provided an explicit commit on a higher level. If we do it again, there will be no chance to roll back to the original status where the transaction begins.    
@@ -57,7 +57,7 @@ The service framework of OData has already included us in a SAP LUW and provided
 
 I’d believe this is more persuasive than the ‘Performance’ or the first reason. However I still don’t have the whole picture of it and my conclusion may not precise.  May experts can give a thorough explanation about it. And the lesson I learnt is(also my suggetstion):   
 
-### Do not use ‘COMMIT WORK’ unless you’re creating a SAP LUW in your project.
+### -   Do not use ‘COMMIT WORK’ unless you’re creating a SAP LUW in your project.
 
 
 
