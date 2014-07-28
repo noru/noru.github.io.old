@@ -1,6 +1,4 @@
-
 ---
-
 layout: post
 title: Why "Cookie?
 tags: JavaScript Anecdote
