@@ -1,9 +1,12 @@
+
 ---
+
 layout: post
 title: Why "Cookie?
 tags: JavaScript Anecdote
 categories: JavaScript Web
 ---
+
 
 Quote from __Javascript - The Definitive Guide 6th Edition:
 
