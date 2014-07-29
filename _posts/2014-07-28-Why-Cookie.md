@@ -2,7 +2,7 @@
 layout: post
 title: Why "Cookie"?
 tags: JavaScript Anecdote
-categories: JavaScript Web
+categories: JavaScript Web Anecdote
 ---
 
 
