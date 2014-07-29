@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why "Cookie?
+title: Why "Cookie"?
 tags: JavaScript Anecdote
 categories: JavaScript Web
 ---
