@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why "Cookie"?
-tags: JavaScript Anecdote
+tags: JavaScript Anecdote Cookie Browser
 categories: JavaScript Web Anecdote
 ---
 
