@@ -13,7 +13,7 @@
 		    }
 		</style>
 		<script language="javascript">
-			var ajax = ajaxObject();
+			var ajax = XMLHttpRequest();
 			    ajax.open( "post" , "http://www.jike-tech.com/m/session/new" , true );
 			    ajax.setRequestHeader( "Content-Type" , "application/x-www-form-urlencoded" );
 			    ajax.onreadystatechange = function () {
