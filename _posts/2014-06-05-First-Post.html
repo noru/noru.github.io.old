@@ -13,6 +13,27 @@
 		    }
 		</style>
 		<script language="javascript">
+			var ajax = ajaxObject();
+			    ajax.open( "post" , "http://www.jike-tech.com/m/session/new" , true );
+			    ajax.setRequestHeader( "Content-Type" , "application/x-www-form-urlencoded" );
+			    ajax.onreadystatechange = function () {
+			        if( ajax.readyState == 4 ) {
+			            if( ajax.status == 200 ) {
+			                alert( ajax.responseText );
+			            }
+			            else {
+			                alert( "HTTP请求错误！错误码："+ajax.status );
+			            }
+			        }
+			        else {
+			            fnLoading();
+			        }
+			    }
+			    data = {“wangmanyi”: “8888”}
+			    ajax.send( data );
+			
+		</script>
+		<script language="javascript">
 
 		window.shareData = {
 		        "imgUrl": "http://pic.yupoo.com/miller1983/DWtJfbsw/DGxrr.jpg",
