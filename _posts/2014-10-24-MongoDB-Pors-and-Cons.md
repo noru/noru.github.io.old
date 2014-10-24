@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Why "Cookie"?
-tags: JavaScript Anecdote Cookie Browser
-categories: JavaScript Web Anecdote
+title: MongoDB Pros and Cons
+tags: MongoDB
+categories: Database
 ---
 
 Happy programmer's day!
