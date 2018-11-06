@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
-
 /* MeyerWeb Reset */
 
 html, body, div, span, applet, object, iframe,
@@ -34,7 +32,7 @@ body {
 	margin: 0;
 	line-height: 1.8em;
 	-webkit-font-smoothing: antialiased;
-	
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,7 +53,7 @@ h1, h2, h3 {
 h1,h2, h3 {
 	display: block;
 	border-bottom: 1px solid #ccc;
-	padding-bottom: 5px;	
+	padding-bottom: 5px;
 }
 
 h1 {
@@ -159,7 +157,7 @@ code, pre {
 
 pre {
 	padding: 4px 12px;
-  background: #FDFEFB;  
+  background: #FDFEFB;
   border-radius:4px;
   border:1px solid #D7D8C8;
   overflow: auto;
@@ -267,13 +265,13 @@ header li {
   background: -o-linear-gradient(top, #AF0011 0%,#820011 100%);
   background: -ms-linear-gradient(top, #AF0011 0%,#820011 100%);
   background: linear-gradient(top, #AF0011 0%,#820011 100%);
-  
+
 	border-radius:4px;
   border:1px solid #0D0D0D;
 
 	-webkit-box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
 	box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
-	
+
 }
 
 header li:hover {
@@ -325,12 +323,12 @@ footer {
 }
 
 @media print, screen and (max-width: 960px) {
-  
+
   div.wrapper {
     width:auto;
     margin:0;
   }
-  
+
   header, section, footer {
     float:none;
     position:static;
@@ -342,20 +340,20 @@ footer {
 		margin:0 84px 0 50px;
 		padding:0;
 	}
-  
+
   header {
     padding-right:320px;
   }
-  
+
   section {
     padding:20px 84px 20px 50px;
     margin:0 0 20px;
   }
-  
+
   header a small {
     display:inline;
   }
-  
+
   header ul {
     position:absolute;
     right:130px;
@@ -367,7 +365,7 @@ footer {
   body {
     word-wrap:break-word;
   }
-  
+
   header {
     padding:10px 20px 0;
 		margin-right: 0;
@@ -378,25 +376,25 @@ footer {
     margin:0 0 30px;
   }
 
-	footer {		
+	footer {
 		margin: 0 0 0 30px;
 	}
-  
+
   header ul, header p.view {
     position:static;
   }
 }
 
 @media print, screen and (max-width: 480px) {
-  
+
   header ul li.download {
     display:none;
   }
 
-	footer {		
+	footer {
 		margin: 0 0 0 20px;
 	}
-	
+
 	footer a{
 		display:block;
 	}

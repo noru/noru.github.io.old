@@ -1,19 +1,19 @@
 ---
 layout: page
-title: Hi Asshole!
-tagline: I Wish You Hurt Yourself While You Sleep
+title: ''
+tagline: ''
 ---
 
 <ul class="entries">
-            {% for post in site.posts limit:1 %}
-              <li>
-                <a href="{{ post.url }}">
-                <h2>{{ post.title }}</h2>
-                <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
-                </a>
-                <div>{{ post.content }}</div>
-              </li>
-            {% endfor %}
+  {% for post in site.posts limit:1 %}
+    <li>
+      <a href="{{ post.url }}">
+      <h2>{{ post.title }}</h2>
+      <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
+      </a>
+      <div>{{ post.content }}</div>
+    </li>
+  {% endfor %}
 </ul>
 
 <br>

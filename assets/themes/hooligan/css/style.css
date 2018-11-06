@@ -1,7 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Special+Elite);
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-@impornt url(http://fonts.googleapis.com/css?family=PT+Mono);
-
 /* Self defined class, for code display */
 .operator {
   color: #FA8787;
@@ -328,7 +324,7 @@ div.content div#page-index {
 .zocial.rss:focus,
 .zocial.rss:hover {
   color:#fb9d3a !important;
-}  
+}
 
 /* Layout */
 /* line 2, ../_sass/_responsive.scss */
